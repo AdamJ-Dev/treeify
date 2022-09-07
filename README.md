@@ -33,14 +33,14 @@ makeTree(items);
 ```
 to produce a `Tree` which exhibits the relevant ancestral relationships in `items`. 
 
-A `Tree` is a class that has `roots`. `roots` are `Tree Nodes`, which have the initial item on their `item` proprety, as well as a set of child nodes on their `children` property.
+A `Tree` is a class that has `roots`. `roots` are `Tree Node`s, which have the initial item on their `item` proprety, as well as a set of child nodes on their `children` property.
 
-More interesting: you may call
+You may also call
 
 ```typescript
 orderByTree(items)
 ```
 
-which produces the selfsame tree, and returns the (pre-order) depth-first-traversed array produced from it.
+which produces the selfsame tree, but returns the (pre-order) depth-first-traversed array produced from it.
 
-For example, assume that you pass in a flat list of comments that are already ordered by date. Then `orderByTree` will return those comments in the *correct* order for their rendering in a comment section.  
+For example, assume that you pass `orderByTree` a flat list of comments that are already ordered by date. Then `orderByTree` will return those comments in correct render order -- how they should be ordered in a comment section.  
