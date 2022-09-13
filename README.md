@@ -15,8 +15,8 @@ Given a flattened array of objects which conform to
 ```typescript
 type Item = {
   id: string;
-  // if item has no parent, parentId should be falsy:
-  parentId: string | null;
+  // key idea: if item has no parent, the following should be falsy:
+  parentId?: string | null; 
 }
 ```
 
