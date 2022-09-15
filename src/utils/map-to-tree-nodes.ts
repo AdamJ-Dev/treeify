@@ -1,7 +1,7 @@
 import { Item } from "../types";
 import TreeNode from "../classes/tree-node"
 
-const mapToTreeNodes = (list: Item[]) => {
+const mapToTreeNodes = <T extends Item>(list: T[]) => {
   return list.map(item => new TreeNode(item));
 };
 

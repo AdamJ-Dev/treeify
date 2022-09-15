@@ -1,6 +1,7 @@
 import { ITree } from "../classes/tree";
+import { Item } from "../types";
 
-const orderByTree = (Tree: ITree) => {
+const orderByTree = <T extends Item>(Tree: ITree<T>) => {
   return Tree.DFSPreOrder();
 };
 

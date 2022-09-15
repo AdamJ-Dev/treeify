@@ -10,7 +10,7 @@ npm install @adamdoescoding/treeify
 
 ### Usage:
 
-Given a flattened array of objects which conform to
+Given a flattened list of objects, each extending
 
 ```typescript
 type Item = {

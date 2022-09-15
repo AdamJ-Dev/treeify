@@ -4,7 +4,7 @@ import getIdMap from "../utils/get-id-map";
 import mapToTreeNodes from "../utils/map-to-tree-nodes";
 import { getNonRoots, getRoots } from "../utils/parse-roots";
 
-const makeTree = (list: Item[]) => {
+const makeTree = <T extends Item> (list: T[]) => {
   const nodes = mapToTreeNodes(list);
   const idsToNodes = getIdMap(nodes);
 
