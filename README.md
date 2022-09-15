@@ -41,6 +41,10 @@ You may also call
 orderByTree(list)
 ```
 
-which produces the selfsame tree, but returns the (pre-order) depth-first-traversed array produced from it.
+which produces the selfsame tree, but returns the (pre-order) depth-first-traversed array produced from it. It is equivalent to 
 
-For example, assume that you pass `orderByTree` a flat list of comments that are already ordered by date. Then `orderByTree` will return those comments in correct render order -- how they should be ordered in a comment section.  
+```typescript
+makeTree(list).DFSPreOrder()
+```
+
+For example, assume that you pass `orderByTree` a flat list of comments that are already ordered by date. Then `orderByTree` will return those comments in a thread-based render order (like they would appear on Reddit).
